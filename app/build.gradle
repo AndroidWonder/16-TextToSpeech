@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.course.example.texttospeech"
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 25
     }
 
     buildTypes {
