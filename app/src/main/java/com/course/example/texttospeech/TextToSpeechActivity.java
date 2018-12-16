@@ -54,7 +54,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
             // If a language is not be available, the result will indicate it.
             int result = speaker.setLanguage(Locale.US);
            
-           //  int result = speaker.setLanguage(Locale.FRANCE);
+             //int result = speaker.setLanguage(Locale.FRANCE);
             if (result == TextToSpeech.LANG_MISSING_DATA ||
                 result == TextToSpeech.LANG_NOT_SUPPORTED) {
                // Language data is missing or the language is not supported.
