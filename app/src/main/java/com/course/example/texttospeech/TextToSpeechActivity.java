@@ -40,7 +40,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
         speaker = new TextToSpeech(this, this);
 	}
 	
-	//speaks the contents of output
+	//speak methods will send text to be spoken
     public void speak(String output){
     //	speaker.speak(output, TextToSpeech.QUEUE_FLUSH, null);  //for APIs before 21
     	speaker.speak(output, TextToSpeech.QUEUE_FLUSH, null, "Id 0");
@@ -80,12 +80,10 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
     	}
     	super.onDestroy();
     }
-    
 
 	// Perform action on click
 	public void onClick(View v) {
 		try {
-
 			Log.i(tag, "onClick invoked.");
 
 			// grab the meal price from the UI
