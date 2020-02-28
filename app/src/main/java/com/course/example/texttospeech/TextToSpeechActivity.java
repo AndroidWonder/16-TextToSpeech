@@ -1,6 +1,6 @@
 /*
  * This is an example of the Android Text to Speech capability.
- * It may not run on earlier versions of the OS but definitely will run on API 15.
+ * Notice 2 interfaces being used.
  */
 
 package com.course.example.texttospeech;
@@ -120,6 +120,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
 			} else {
 				Log.i(tag, "Speaker Not Already Speaking");
 				speak(answer);
+				mealpricefield.setText("");
 			} 
 			
 		} catch (Exception e) {
