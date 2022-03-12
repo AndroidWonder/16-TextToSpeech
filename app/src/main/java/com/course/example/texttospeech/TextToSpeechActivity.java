@@ -42,7 +42,6 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
 	
 	//speak methods will send text to be spoken
     public void speak(String output){
-    //	speaker.speak(output, TextToSpeech.QUEUE_FLUSH, null);  //for APIs before 21
     	speaker.speak(output, TextToSpeech.QUEUE_FLUSH, null, "Id 0");
     }
     
