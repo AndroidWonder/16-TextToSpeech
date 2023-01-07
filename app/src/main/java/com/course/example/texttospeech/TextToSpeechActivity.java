@@ -1,6 +1,7 @@
 /*
  * This is an example of the Android Text to Speech capability.
  * Notice 2 interfaces being used.
+ * Run this example with API 32. API 33 has an emulator regression.
  */
 
 package com.course.example.texttospeech;
@@ -52,7 +53,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
             // Set preferred language to US english.
             // If a language is not be available, the result will indicate it.
             int result = speaker.setLanguage(Locale.US);
-             //int result = speaker.setLanguage(Locale.FRANCE);
+             //int result = speaker.setLanguage(Locale.ITALY);
 
             if (result == TextToSpeech.LANG_MISSING_DATA ||
                 result == TextToSpeech.LANG_NOT_SUPPORTED) {
