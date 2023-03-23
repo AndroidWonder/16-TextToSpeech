@@ -83,7 +83,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
 
 	// Perform action on click
 	public void onClick(View v) {
-		try {
+
 			Log.i(tag, "onClick invoked.");
 
 			// grab the meal price from the UI
@@ -119,12 +119,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
 				Log.i(tag, "Speaker Not Already Speaking");
 				speak(answer);
 				mealpricefield.setText("");
-			} 
-			
-		} catch (Exception e) {
-			Log.e(tag, "Failed to Calculate Tip:" + e.getMessage());
-			answerfield.setText("Failed to Calculate Tip:" + e.getMessage());
-		}
+			}
 
 	}
 }
