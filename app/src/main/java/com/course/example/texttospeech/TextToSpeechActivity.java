@@ -93,7 +93,7 @@ public class TextToSpeechActivity extends Activity implements OnClickListener, O
 			String answer = "";
 
 			// check to see if the meal price includes a "$"
-			if (mealprice.indexOf("$") != -1) {
+			if (mealprice.contains("$")) {
 				mealprice = mealprice.substring(1);
 			}
 
