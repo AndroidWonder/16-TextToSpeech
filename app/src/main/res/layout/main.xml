@@ -12,8 +12,8 @@
 <EditText
 	android:id="@+id/mealprice"
     android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-	android:autoText="true"
+    android:layout_height="wrap_content"
+	android:inputType="numberDecimal"
 	/>
 <Button
 	android:id="@+id/calculate"

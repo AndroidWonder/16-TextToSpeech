@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.course.example.texttospeech"
         minSdkVersion 26
-        targetSdkVersion 32
+        targetSdkVersion 33
     }
 
     buildTypes {
@@ -14,7 +14,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-    buildToolsVersion '33.0.1'
+
+    namespace 'com.course.example.texttospeech'
 }
 
 dependencies {
